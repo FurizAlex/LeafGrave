@@ -1,6 +1,10 @@
 package net.furizalex.leafgrave;
 
 import com.mojang.logging.LogUtils;
+import net.furizalex.leafgrave.block.ModBlocks;
+import net.furizalex.leafgrave.item.ModCreativeModeTabs;
+import net.furizalex.leafgrave.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,13 +31,14 @@ public class LeafGrave
 
     public LeafGrave() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -46,6 +51,21 @@ public class LeafGrave
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GLOOMWOOD);
+            event.accept(ModItems.STRIPPED_GLOOMWOOD);
+            event.accept(ModItems.BURNT_POISY_WOOD);
+            event.accept(ModItems.POISY_WOOD);
+            event.accept(ModItems.LEAFYARD_SWORD);
+            event.accept(ModItems.GLOOM_SWORD);
+            event.accept(ModItems.GLOOM_BOW);
+            event.accept(ModItems.ENT_SPAWN_EGG);
+            event.accept(ModItems.GHOULIGAR_SPAWN_EGG);
+            event.accept(ModItems.PHANTOMKNIGHT_SPAWN_EGG);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.POISY_BONE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

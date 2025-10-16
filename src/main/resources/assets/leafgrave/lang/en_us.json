@@ -1,0 +1,17 @@
+{
+  "item.leafgrave.gloomwood": "Gloomwood",
+  "item.leafgrave.strippedgloomwood": "Stripped Gloomwood",
+  "item.leafgrave.burnt_poisy_wood": "Burnt Poisy Wood",
+  "item.leafgrave.poisywood": "Poisy Wood",
+  "item.leafgrave.leafyardsword": "Leafyard Sword",
+  "item.leafgrave.gloomsword": "Gloom Sword",
+  "item.leafgrave.gloombow": "Gloom Bow",
+  "item.leafgrave.poisydagger": "Poisy Dagger",
+  "item.leafgrave.ent_spawn_egg": "Ent Spawn Egg",
+  "item.leafgrave.ghouligar_spawn_egg": "Ghouligar Spawn Egg",
+  "item.leafgrave.phantomknight_spawn_egg": "Phantom Knight Spawn Egg",
+
+  "block.leafgrave.poisy_bone_block": "Poisy Bone Block",
+
+  "creativetab.leafgrave.leafgrave_items": "Leaf Grave"
+}

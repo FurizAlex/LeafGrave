@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "leafgrave:burnt_poisy_wood"
+    }
+  },
+  "pattern": [
+    " B ",
+    " B ",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "leafgrave:leafyardsword"
+  }
+}
