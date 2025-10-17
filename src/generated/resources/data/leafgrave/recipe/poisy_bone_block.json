@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "leafgrave:poisywood"
+    },
+    "B": {
+      "item": "minecraft:bone_block"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "leafgrave:poisy_bone_block"
+  }
+}

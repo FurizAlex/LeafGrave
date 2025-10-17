@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "leafgrave:strippedgloomwood"
+    },
+    "B": {
+      "item": "minecraft:string"
+    },
+    "C": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " AC",
+    "A B",
+    " AC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "leafgrave:gloombow"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "leafgrave:item/ghouligar_spawn_egg"
-  }
-}
